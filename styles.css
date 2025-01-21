@@ -1585,6 +1585,10 @@ footer a {
 
 
 @media screen and (max-width: 410px) {
+
+    .text-image-section{
+        display: none;
+    }
     
 
     .ÜberschriftPunkte{
