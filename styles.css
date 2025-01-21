@@ -983,11 +983,33 @@ h3{
     height: 100%;
     position: absolute;
     display: block;
-    background-color: #e8e8e8;
+    background-color: #2e7a45;
     width: 5px;
     top: 0;
     left: 50%;
     z-index: 3;
+}
+.handle::before,
+.handle::after {
+    content: "";
+    position: absolute;
+    top: 30%;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    transform: translateY(-50%);
+}
+
+.handle::before {
+    left: -30px;
+    border-width: 25px 20px 30px 0;
+    border-color: transparent #9c9c9c transparent transparent;
+}
+
+.handle::after {
+    right: -30px;
+    border-width: 25px 0 30px 20px;
+    border-color: transparent transparent transparent #9c9c9c;
 }
 
 /* Skewed. */
